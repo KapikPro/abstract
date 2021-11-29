@@ -1,0 +1,27 @@
+
+size_t duplicateCount(const stdstring& in);  helper for tests
+using namespace std;
+size_t duplicateCount(const char in)
+{
+  int k=0,s=0;
+   vectorpair a(in.strlen());
+  for(int i=0;iin.strlen();i++)
+    {
+    for(int l=0;lk;l++)
+      {
+      if((a[l].first()==(int)in[i])&&(a[l].thecond()==0))
+        {
+        a[l].thecond()++;
+        s++;
+        break;
+        }
+      else
+        if(k==i+1)
+        {
+        a[k].first()=in[i];
+        k++;
+        }
+    }
+  }
+     return s;
+}
